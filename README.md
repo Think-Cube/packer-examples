@@ -1,9 +1,10 @@
 # PackerExamples
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Validate Azure](https://github.com/Think-Cube/PackerExamples/actions/workflows/validate-azure.yml/badge.svg)](https://github.com/Think-Cube/PackerExamples/actions/workflows/validate-azure.yml)
-[![Validate VirtualBox](https://github.com/Think-Cube/PackerExamples/actions/workflows/validate-virtualbox.yml/badge.svg)](https://github.com/Think-Cube/PackerExamples/actions/workflows/validate-virtualbox.yml)
-[![Validate VMware](https://github.com/Think-Cube/PackerExamples/actions/workflows/validate-vmware.yml/badge.svg)](https://github.com/Think-Cube/PackerExamples/actions/workflows/validate-vmware.yml)
+[![Packer](https://img.shields.io/badge/Packer-%3E%3D1.11.0-blue?logo=packer)](https://developer.hashicorp.com/packer)
+[![Azure](https://img.shields.io/badge/Azure-supported-0078D4?logo=microsoftazure)](azure/)
+[![VirtualBox](https://img.shields.io/badge/VirtualBox-%3E%3D7.0-183A61?logo=virtualbox)](virtualbox/)
+[![VMware](https://img.shields.io/badge/VMware_Workstation-%3E%3D17.0-607078?logo=vmware)](vmware/)
 
 A collection of professional [HashiCorp Packer](https://www.packer.io/) templates written in HCL2 for building machine images across multiple platforms. All templates follow current best practices and target modern, supported OS versions.
 
@@ -133,16 +134,6 @@ Each template directory contains:
 ├── scripts/                   # Shell / PowerShell provisioners
 └── http/                      # Autoinstall / preseed / kickstart files
 ```
-
-## CI/CD
-
-GitHub Actions runs `packer validate` on every push and pull request that touches a template. No real builds are triggered in CI — builds are intended to run locally or from a self-hosted runner with access to the target platform.
-
-| Workflow | Trigger |
-|---|---|
-| [validate-azure.yml](.github/workflows/validate-azure.yml) | changes under `azure/` |
-| [validate-virtualbox.yml](.github/workflows/validate-virtualbox.yml) | changes under `virtualbox/` |
-| [validate-vmware.yml](.github/workflows/validate-vmware.yml) | changes under `vmware/` |
 
 ## Contributing
 
