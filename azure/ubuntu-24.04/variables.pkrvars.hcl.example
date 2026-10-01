@@ -1,0 +1,12 @@
+# Copy this file to variables.pkrvars.hcl and fill in your values.
+# Never commit the real file — it is listed in .gitignore.
+
+client_id       = "00000000-0000-0000-0000-000000000000"
+client_secret   = "your-client-secret"
+subscription_id = "00000000-0000-0000-0000-000000000000"
+tenant_id       = "00000000-0000-0000-0000-000000000000"
+
+resource_group_name = "packer-images-rg"
+location            = "West Europe"
+vm_size             = "Standard_B2s"
+image_name          = "ubuntu-2404-lts"

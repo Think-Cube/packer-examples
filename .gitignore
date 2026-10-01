@@ -1,0 +1,21 @@
+# Packer build output
+output-*/
+manifest.json
+packer_cache/
+*.box
+
+# Variable files with real credentials
+*.pkrvars.hcl
+!*.pkrvars.hcl.example
+
+# Packer logs
+packer-*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp

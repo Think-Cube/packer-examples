@@ -1,0 +1,9 @@
+client_id       = "00000000-0000-0000-0000-000000000000"
+client_secret   = "your-client-secret"
+subscription_id = "00000000-0000-0000-0000-000000000000"
+tenant_id       = "00000000-0000-0000-0000-000000000000"
+
+resource_group_name = "packer-images-rg"
+location            = "West Europe"
+vm_size             = "Standard_D2s_v3"
+image_name          = "windows-server-2025-datacenter"
